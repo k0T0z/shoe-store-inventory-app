@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.shoestore_starter.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.shoestore_starter.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_onBoardingInstructionsFragment"
+            app:destination="@id/onBoardingInstructionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingInstructionsFragment"
+        android:name="com.example.shoestore_starter.OnBoardingInstructionsFragment"
+        android:label="fragment_on_boarding_instructions"
+        tools:layout="@layout/fragment_on_boarding_instructions" >
+        <action
+            android:id="@+id/action_onBoardingInstructionsFragment_to_shoeListViewFragment"
+            app:destination="@id/shoeListViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeListViewFragment"
+        android:name="com.example.shoestore_starter.ShoeListViewFragment"
+        android:label="fragment_shoe_list_view"
+        tools:layout="@layout/fragment_shoe_list_view" >
+        <action
+            android:id="@+id/action_shoeListViewFragment_to_shoeDetailsFragment"
+            app:destination="@id/shoeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeDetailsFragment"
+        android:name="com.example.shoestore_starter.ShoeDetailsFragment"
+        android:label="fragment_shoe_details"
+        tools:layout="@layout/fragment_shoe_details" >
+        <action
+            android:id="@+id/action_shoeDetailsFragment_pop_including_shoeListViewFragment"
+            app:popUpTo="@id/shoeListViewFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

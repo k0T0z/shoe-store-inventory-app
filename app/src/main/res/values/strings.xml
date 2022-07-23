@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_input_hint_text">Enter your email</string>
+    <string name="password_input_hint_text">Enter your password</string>
+    <string name="login_button_label">LOGIN</string>
+    <string name="register_button_label">REGISTER</string>
+    <string name="on_boarding_button_label">CONTINUE</string>
+    <string name="welcome_on_boarding_text">Thank you for downloading our app, in order to get started press the continue button below</string>
+    <string name="on_boarding_instructions_string">Welcome, this is a shoe store app, you can add shoes for the users to buy and of course you can edit the information of a specific shoe, press continue to see the list of shoes</string>
+    <string name="floating_action_button_description">floating action button</string>
+    <string name="scroll_view_description">scroll view</string>
+</resources>

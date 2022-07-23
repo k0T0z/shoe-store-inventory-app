@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_register_screen_margin">16dp</dimen>
+    <dimen name="login_screen_big_margin">32dp</dimen>
+    <dimen name="login_register_screen_large_bottom_margin">48dp</dimen>
+    <dimen name="box_min_height">48dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="text_size_big">24sp</dimen>
+</resources>

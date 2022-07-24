@@ -9,6 +9,6 @@
     <string name="on_boarding_button_label">CONTINUE</string>
     <string name="welcome_on_boarding_text">Thank you for downloading our app, in order to get started press the continue button below</string>
     <string name="on_boarding_instructions_string">Welcome, this is a shoe store app, you can add shoes for the users to buy and of course you can edit the information of a specific shoe, press continue to see the list of shoes</string>
-    <string name="floating_action_button_description">floating action button</string>
-    <string name="scroll_view_description">scroll view</string>
+    <string name="floating_action_button_description">+</string>
+    <string name="scroll_view_description">scroll</string>
 </resources>

@@ -9,16 +9,35 @@
             type="com.example.shoestore_starter.ShoesList" />
     </data>
 
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:contentDescription="@string/floating_action_button_description"
+            android:layout_marginBottom="@dimen/login_register_screen_margin"
+            android:layout_marginEnd="@dimen/login_register_screen_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:clickable="true"
+            android:focusable="true" />
 
         <ScrollView
+            android:id="@+id/scroll_view_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="@dimen/login_register_screen_margin"
             android:contentDescription="@string/scroll_view_description"
-            android:padding="@dimen/login_register_screen_margin">
+            android:padding="@dimen/login_register_screen_margin"
+            android:layout_marginLeft="@dimen/login_register_screen_margin"
+            android:layout_marginRight="@dimen/login_register_screen_margin"
+            android:layout_marginBottom="@dimen/login_register_screen_margin"
+            android:layout_marginTop="@dimen/login_register_screen_margin">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -26,34 +45,54 @@
                 android:orientation="vertical">
 
 
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
             </LinearLayout>
         </ScrollView>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="bottom">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floating_action_button_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:clickable="true"
-                android:contentDescription="@string/floating_action_button_description"
-                android:focusable="true"
-                app:srcCompat="@android:drawable/ic_input_add" />
-        </LinearLayout>
 
-    </RelativeLayout>
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/list_view_screen_constraint_layout_id"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="624dp"-->
+<!--            android:layout_marginStart="312dp">-->
+
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/floating_action_button_id"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:clickable="true"-->
+<!--                android:contentDescription="@string/floating_action_button_description"-->
+<!--                android:focusable="true"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:srcCompat="@android:drawable/ic_input_add" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </FrameLayout>
+
+
+
+
 
 
 

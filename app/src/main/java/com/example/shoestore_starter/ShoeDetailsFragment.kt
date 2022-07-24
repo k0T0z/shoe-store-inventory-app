@@ -28,9 +28,8 @@ class ShoeDetailsFragment : Fragment() {
             val description: String = binding.shoeDescriptionInputTextId.text.toString()
 
             binding.viewModel!!.addShoe(name, size.toDouble(), company,description)
-            view.findNavController().navigate(R.id.action_shoeDetailsFragment_pop_including_shoeListViewFragment)
 
-//            Navigation.createNavigateOnClickListener(R.id.action_shoeDetailsFragment_pop_including_shoeListViewFragment)
+            view.findNavController().navigate(R.id.action_shoeDetailsFragment_pop_including_shoeListViewFragment)
         }
         // Inflate the layout for this fragment
         return binding.root

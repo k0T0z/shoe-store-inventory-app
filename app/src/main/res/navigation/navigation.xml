@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+ <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
@@ -48,7 +48,6 @@
         tools:layout="@layout/fragment_shoe_details" >
         <action
             android:id="@+id/action_shoeDetailsFragment_pop_including_shoeListViewFragment"
-            app:popUpTo="@id/shoeListViewFragment"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/shoeListViewFragment" />
     </fragment>
 </navigation>

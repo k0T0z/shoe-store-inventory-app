@@ -9,6 +9,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.example.shoestore_starter.databinding.FragmentShoeListViewBinding
 
 
@@ -32,6 +33,6 @@ class ShoeListViewFragment : Fragment() {
         viewModel.listOfShoes.observe(viewLifecycleOwner, Observer { newListOfShoes ->
             binding.viewModel!!.listOfShoes.value = newListOfShoes
         })
-        return inflater.inflate(R.layout.fragment_shoe_list_view, container, false)
+        return binding.root
     }
 }

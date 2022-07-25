@@ -7,8 +7,10 @@
     <string name="login_button_label">LOGIN</string>
     <string name="register_button_label">REGISTER</string>
     <string name="on_boarding_button_label">CONTINUE</string>
-    <string name="welcome_on_boarding_text">Thank you for downloading our app, in order to get started press the continue button below</string>
-    <string name="on_boarding_instructions_string">Welcome, this is a shoe store app, you can add shoes for the users to buy and of course you can edit the information of a specific shoe, press continue to see the list of shoes</string>
+    <string name="welcome_on_boarding_text">Thank you for downloading our app</string>
+    <string name="on_boarding_instructions_string">Welcome, this is a shoe store app, you can add shoes for the users to buy and of course you can edit the information of a specific shoe</string>
     <string name="floating_action_button_description">+</string>
     <string name="scroll_view_description">scroll</string>
+    <string name="second_string_ob_boarding_screen">Please proceed by pressing the below button</string>
+    <string name="remember_that_the_list_of_shoes_is_scrollable_you_can_always_see_the_full_list_by_scrolling_down_the_screen_in_order_to_proceed_press_the_below_button">Remember that the list of shoes is scrollable you can always see the full list by scrolling down the screen, in order to proceed press the below button</string>
 </resources>

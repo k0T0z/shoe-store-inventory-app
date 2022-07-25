@@ -19,7 +19,7 @@ class OnBoardingFragment : Fragment() {
         val binding: FragmentOnBoardingBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_on_boarding, container, false)
         binding.onBoardingButton.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_onBoardingFragment_to_onBoardingInstructionsFragment)
+            Navigation.createNavigateOnClickListener(OnBoardingFragmentDirections.actionOnBoardingFragmentToOnBoardingInstructionsFragment())
         )
         return binding.root
     }

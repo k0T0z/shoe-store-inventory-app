@@ -7,19 +7,23 @@ import com.example.shoestore_starter.modeks.Shoe
 
 
 class ShoesList : ViewModel() {
-    private val _listOfShoes = MutableLiveData<MutableList<Shoe>>()
 
-    init {
-        _listOfShoes.value?.add(Shoe("g3", 39.0,"adidas","sport shoe",))
-    }
+    var name: String = ""
+    var company: String = ""
+    var size: String = ""
+    var description: String = ""
+
+    private val _listOfShoes = MutableLiveData<MutableList<Shoe>>()
 
     val listOfShoes: MutableLiveData<MutableList<Shoe>>
         get() = _listOfShoes
 
-    fun addShoe(name: String, size: Double, company: String, description: String) {
-        _listOfShoes.value?.add(
-            Shoe(name, size, company, description,)
-        )
+    fun addShoe() {
+        _listOfShoes.value?.add(Shoe(name,size,company,description))
+        _listOfShoes.notifyObserver()
     }
 
+    fun <T> MutableLiveData<T>.notifyObserver() {
+        this.value = this.value
+    }
 }

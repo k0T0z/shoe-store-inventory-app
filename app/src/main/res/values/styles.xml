@@ -31,4 +31,18 @@
         <item name="android:layout_marginRight">@dimen/login_register_screen_margin</item>
     </style>
 
+    <style name="ListViewScreenNameTextStyle">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="ListViewScreenOthersTextStyle">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
 </resources>

@@ -19,10 +19,10 @@ class LoginFragment : Fragment() {
         val binding: FragmentLoginBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_login, container, false)
         binding.loginButton.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_onBoardingFragment)
+            Navigation.createNavigateOnClickListener(LoginFragmentDirections.actionLoginFragmentToOnBoardingFragment())
         )
         binding.registerButton.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_onBoardingFragment)
+            Navigation.createNavigateOnClickListener(LoginFragmentDirections.actionLoginFragmentToOnBoardingFragment())
         )
         return binding.root
     }
